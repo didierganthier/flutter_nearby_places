@@ -11,7 +11,7 @@ class PlacesService {
     return _service;
   }
 
-  final String searchUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyDhjfDA7KRJ0mLUVG0mfdbQwXM_gZdYU3I";
+  final String searchUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCHudYk9i6BPSYjsx8PEHRVaHkGPF67ZTw";
 
   Future<List<Place>> getNearbyPlaces() async{
 
