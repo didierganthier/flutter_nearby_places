@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'package:flutter_nearby_places/models/place_model.dart';
 import 'package:http/http.dart' as http;
 
+import '../constants.dart';
+
 class PlacesService {
   static final _service = PlacesService();
 
@@ -11,7 +13,7 @@ class PlacesService {
     return _service;
   }
 
-  final String searchUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCHudYk9i6BPSYjsx8PEHRVaHkGPF67ZTw";
+
 
   Future<List<Place>> getNearbyPlaces() async{
 
